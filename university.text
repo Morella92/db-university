@@ -15,3 +15,12 @@ Mostro le righe 0 - 24 (3531 del totale, La query ha impiegato 0,0168 secondi.)
 SELECT * 
 FROM `students` 
 WHERE DATEDIFF(CURRENT_DATE(), `date_of_birth`) > 30*365;
+
+QUERY 4
+Mostro le righe 0 - 24 (286 del totale, La query ha impiegato 0,0006 secondi.)
+SELECT * 
+FROM courses 
+WHERE `year` = '1' AND `period` = 'I semestre';
+
+
+
