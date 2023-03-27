@@ -1,0 +1,5 @@
+QUERY 1
+Mostro le righe 0 - 24 (160 del totale, La query ha impiegato 0,0009 secondi.)
+SELECT * 
+FROM `students` ;
+WHERE YEAR(`date_of_birth`) = 1990;
