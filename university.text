@@ -3,3 +3,9 @@ Mostro le righe 0 - 24 (160 del totale, La query ha impiegato 0,0009 secondi.)
 SELECT * 
 FROM `students` ;
 WHERE YEAR(`date_of_birth`) = 1990;
+
+QUERY 2
+Mostro le righe 0 - 24 (479 del totale, La query ha impiegato 0,0027 secondi.)
+SELECT * 
+FROM `courses` 
+WHERE `cfu` > 10;
