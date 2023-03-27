@@ -22,5 +22,33 @@ SELECT *
 FROM courses 
 WHERE `year` = '1' AND `period` = 'I semestre';
 
+QUERY 5 
+Mostro le righe 0 - 20 (21 del totale, La query ha impiegato 0,0038 secondi.)
+SELECT * 
+FROM `exams` 
+WHERE `date` = '2020-06-20' AND `hour`>= '14:00:00';
+
+QUERY 6
+Mostro le righe 0 - 24 (38 del totale, La query ha impiegato 0,0005 secondi.)
+SELECT * 
+FROM `degrees` 
+WHERE `level` = 'magistrale';
+
+QUERY 7
+La query SQL è stata eseguita con successo.
+SELECT COUNT(*) AS `numero_dipartimenti` 
+FROM `departments`;
+
+numero_dipartimenti
+12
+
+QUERY 8
+SELECT COUNT(*) as `insegnanti_con_telefono` 
+FROM `teachers` 
+WHERE phone IS NOT NULL;
+
+insegnanti_con_telefono
+50
+
 
 
