@@ -11,10 +11,10 @@ FROM `courses`
 WHERE `cfu` > 10;
 
 QUERY 3
-Mostro le righe 0 - 24 (3531 del totale, La query ha impiegato 0,0168 secondi.)
+Mostro le righe 0 - 24 (3380 del totale, La query ha impiegato 0,0168 secondi.)
 SELECT * 
 FROM `students` 
-WHERE DATEDIFF(CURRENT_DATE(), `date_of_birth`) > 30*365;
+WHERE TIMESTAMPDIFF(YEAR, `date_of_birth`, CURDATE()) > 30;
 
 QUERY 4
 Mostro le righe 0 - 24 (286 del totale, La query ha impiegato 0,0006 secondi.)
