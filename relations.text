@@ -1,0 +1,7 @@
+1. Contare quanti iscritti ci sono stati ogni anno
+Mostro le righe 0 - 3 (4 del totale, La query ha impiegato 0,0132 secondi.)
+SELECT COUNT(*) AS `students_number`, YEAR(`enrolment_date`) AS `year_of_enrolment`
+FROM `students`
+GROUP BY YEAR(`enrolment_date`);
+
+
